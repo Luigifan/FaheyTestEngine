@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F0F3EAF1C8F04E700CC1E73 /* TestWindowControllerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F3EAD1C8F04E700CC1E73 /* TestWindowControllerWindowController.m */; };
+		3F0F3EB01C8F04E700CC1E73 /* TestWindowControllerWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F3EAE1C8F04E700CC1E73 /* TestWindowControllerWindowController.xib */; };
+		3F215D181C835F8A00389B27 /* SettingsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F215D171C835F8A00389B27 /* SettingsStorage.m */; };
+		3FAE14411C80F0C300122CC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAE14401C80F0C300122CC3 /* Cocoa.framework */; };
+		3FAE144B1C80F0C300122CC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE14491C80F0C300122CC3 /* InfoPlist.strings */; };
+		3FAE144D1C80F0C300122CC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE144C1C80F0C300122CC3 /* main.m */; };
+		3FAE14511C80F0C300122CC3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE144F1C80F0C300122CC3 /* Credits.rtf */; };
+		3FAE14541C80F0C300122CC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE14531C80F0C300122CC3 /* AppDelegate.m */; };
+		3FAE14571C80F0C300122CC3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE14551C80F0C300122CC3 /* MainMenu.xib */; };
+		3FAE145F1C80F0C300122CC3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAE145E1C80F0C300122CC3 /* SenTestingKit.framework */; };
+		3FAE14601C80F0C300122CC3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAE14401C80F0C300122CC3 /* Cocoa.framework */; };
+		3FAE14681C80F0C400122CC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE14661C80F0C400122CC3 /* InfoPlist.strings */; };
+		3FAE146B1C80F0C400122CC3 /* FaheyTestEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE146A1C80F0C400122CC3 /* FaheyTestEngineTests.m */; };
+		3FAE14771C80F0FF00122CC3 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE14761C80F0FF00122CC3 /* Question.m */; };
+		3FAE147A1C80F34E00122CC3 /* MultipleChoiceQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE14791C80F34E00122CC3 /* MultipleChoiceQuestion.m */; };
+		3FAE147D1C80F49900122CC3 /* TrueFalseQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE147C1C80F49900122CC3 /* TrueFalseQuestion.m */; };
+		3FAE14801C80F9DA00122CC3 /* TestQuestionsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE147F1C80F9DA00122CC3 /* TestQuestionsParser.m */; };
+		3FB4A75F1C865A7A004B49BC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4A75E1C865A7A004B49BC /* TableViewController.m */; };
+		3FBB6B881C90540F0077B687 /* MultipleChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB6B861C90540F0077B687 /* MultipleChoiceViewController.m */; };
+		3FBB6B891C90540F0077B687 /* MultipleChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB6B871C90540F0077B687 /* MultipleChoiceViewController.xib */; };
+		3FEB4E671C9096610035BE6F /* TrueFalseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB4E651C9096610035BE6F /* TrueFalseViewController.m */; };
+		3FEB4E681C9096610035BE6F /* TrueFalseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB4E661C9096610035BE6F /* TrueFalseViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FAE14611C80F0C300122CC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FAE14331C80F0C300122CC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FAE143B1C80F0C300122CC3;
+			remoteInfo = FaheyTestEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F0F3EAC1C8F04E700CC1E73 /* TestWindowControllerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWindowControllerWindowController.h; sourceTree = "<group>"; };
+		3F0F3EAD1C8F04E700CC1E73 /* TestWindowControllerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWindowControllerWindowController.m; sourceTree = "<group>"; };
+		3F0F3EAE1C8F04E700CC1E73 /* TestWindowControllerWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestWindowControllerWindowController.xib; sourceTree = "<group>"; };
+		3F215D161C835F8A00389B27 /* SettingsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsStorage.h; sourceTree = "<group>"; };
+		3F215D171C835F8A00389B27 /* SettingsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsStorage.m; sourceTree = "<group>"; };
+		3FAE143C1C80F0C300122CC3 /* FaheyTestEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaheyTestEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAE14401C80F0C300122CC3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3FAE14431C80F0C300122CC3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3FAE14441C80F0C300122CC3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3FAE14451C80F0C300122CC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FAE14481C80F0C300122CC3 /* FaheyTestEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaheyTestEngine-Info.plist"; sourceTree = "<group>"; };
+		3FAE144A1C80F0C300122CC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FAE144C1C80F0C300122CC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FAE144E1C80F0C300122CC3 /* FaheyTestEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaheyTestEngine-Prefix.pch"; sourceTree = "<group>"; };
+		3FAE14501C80F0C300122CC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3FAE14521C80F0C300122CC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FAE14531C80F0C300122CC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FAE14561C80F0C300122CC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3FAE145D1C80F0C300122CC3 /* FaheyTestEngineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaheyTestEngineTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAE145E1C80F0C300122CC3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3FAE14651C80F0C400122CC3 /* FaheyTestEngineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaheyTestEngineTests-Info.plist"; sourceTree = "<group>"; };
+		3FAE14671C80F0C400122CC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FAE14691C80F0C400122CC3 /* FaheyTestEngineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaheyTestEngineTests.h; sourceTree = "<group>"; };
+		3FAE146A1C80F0C400122CC3 /* FaheyTestEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaheyTestEngineTests.m; sourceTree = "<group>"; };
+		3FAE14751C80F0FF00122CC3 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		3FAE14761C80F0FF00122CC3 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		3FAE14781C80F34E00122CC3 /* MultipleChoiceQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceQuestion.h; sourceTree = "<group>"; };
+		3FAE14791C80F34E00122CC3 /* MultipleChoiceQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceQuestion.m; sourceTree = "<group>"; };
+		3FAE147B1C80F49900122CC3 /* TrueFalseQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseQuestion.h; sourceTree = "<group>"; };
+		3FAE147C1C80F49900122CC3 /* TrueFalseQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFalseQuestion.m; sourceTree = "<group>"; };
+		3FAE147E1C80F9DA00122CC3 /* TestQuestionsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuestionsParser.h; sourceTree = "<group>"; };
+		3FAE147F1C80F9DA00122CC3 /* TestQuestionsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQuestionsParser.m; sourceTree = "<group>"; };
+		3FB4A75D1C865A7A004B49BC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		3FB4A75E1C865A7A004B49BC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		3FBB6B851C90540F0077B687 /* MultipleChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceViewController.h; sourceTree = "<group>"; };
+		3FBB6B861C90540F0077B687 /* MultipleChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceViewController.m; sourceTree = "<group>"; };
+		3FBB6B871C90540F0077B687 /* MultipleChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleChoiceViewController.xib; sourceTree = "<group>"; };
+		3FEB4E641C9096610035BE6F /* TrueFalseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseViewController.h; sourceTree = "<group>"; };
+		3FEB4E651C9096610035BE6F /* TrueFalseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFalseViewController.m; sourceTree = "<group>"; };
+		3FEB4E661C9096610035BE6F /* TrueFalseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrueFalseViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FAE14391C80F0C300122CC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE14411C80F0C300122CC3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAE14591C80F0C300122CC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE145F1C80F0C300122CC3 /* SenTestingKit.framework in Frameworks */,
+				3FAE14601C80F0C300122CC3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F228A881C8B1B3600C38D12 /* TestingWindow */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F3EAC1C8F04E700CC1E73 /* TestWindowControllerWindowController.h */,
+				3F0F3EAD1C8F04E700CC1E73 /* TestWindowControllerWindowController.m */,
+				3F0F3EAE1C8F04E700CC1E73 /* TestWindowControllerWindowController.xib */,
+				3FBB6B851C90540F0077B687 /* MultipleChoiceViewController.h */,
+				3FBB6B861C90540F0077B687 /* MultipleChoiceViewController.m */,
+				3FBB6B871C90540F0077B687 /* MultipleChoiceViewController.xib */,
+				3FEB4E641C9096610035BE6F /* TrueFalseViewController.h */,
+				3FEB4E651C9096610035BE6F /* TrueFalseViewController.m */,
+				3FEB4E661C9096610035BE6F /* TrueFalseViewController.xib */,
+			);
+			name = TestingWindow;
+			sourceTree = "<group>";
+		};
+		3FAE14311C80F0C300122CC3 = {
+			isa = PBXGroup;
+			children = (
+				3FAE14461C80F0C300122CC3 /* FaheyTestEngine */,
+				3FAE14631C80F0C300122CC3 /* FaheyTestEngineTests */,
+				3FAE143F1C80F0C300122CC3 /* Frameworks */,
+				3FAE143D1C80F0C300122CC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FAE143D1C80F0C300122CC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE143C1C80F0C300122CC3 /* FaheyTestEngine.app */,
+				3FAE145D1C80F0C300122CC3 /* FaheyTestEngineTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FAE143F1C80F0C300122CC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE14401C80F0C300122CC3 /* Cocoa.framework */,
+				3FAE145E1C80F0C300122CC3 /* SenTestingKit.framework */,
+				3FAE14421C80F0C300122CC3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FAE14421C80F0C300122CC3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE14431C80F0C300122CC3 /* AppKit.framework */,
+				3FAE14441C80F0C300122CC3 /* CoreData.framework */,
+				3FAE14451C80F0C300122CC3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3FAE14461C80F0C300122CC3 /* FaheyTestEngine */ = {
+			isa = PBXGroup;
+			children = (
+				3F228A881C8B1B3600C38D12 /* TestingWindow */,
+				3FB4A75C1C865A67004B49BC /* Obsolete */,
+				3FB4A75A1C865A60004B49BC /* UI */,
+				3FAE14741C80F0E400122CC3 /* TestComponents */,
+				3FAE14521C80F0C300122CC3 /* AppDelegate.h */,
+				3FAE14531C80F0C300122CC3 /* AppDelegate.m */,
+				3FAE14551C80F0C300122CC3 /* MainMenu.xib */,
+				3FAE14471C80F0C300122CC3 /* Supporting Files */,
+			);
+			path = FaheyTestEngine;
+			sourceTree = "<group>";
+		};
+		3FAE14471C80F0C300122CC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE14481C80F0C300122CC3 /* FaheyTestEngine-Info.plist */,
+				3FAE14491C80F0C300122CC3 /* InfoPlist.strings */,
+				3FAE144C1C80F0C300122CC3 /* main.m */,
+				3FAE144E1C80F0C300122CC3 /* FaheyTestEngine-Prefix.pch */,
+				3FAE144F1C80F0C300122CC3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FAE14631C80F0C300122CC3 /* FaheyTestEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE14691C80F0C400122CC3 /* FaheyTestEngineTests.h */,
+				3FAE146A1C80F0C400122CC3 /* FaheyTestEngineTests.m */,
+				3FAE14641C80F0C400122CC3 /* Supporting Files */,
+			);
+			path = FaheyTestEngineTests;
+			sourceTree = "<group>";
+		};
+		3FAE14641C80F0C400122CC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE14651C80F0C400122CC3 /* FaheyTestEngineTests-Info.plist */,
+				3FAE14661C80F0C400122CC3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FAE14741C80F0E400122CC3 /* TestComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE14751C80F0FF00122CC3 /* Question.h */,
+				3FAE14761C80F0FF00122CC3 /* Question.m */,
+				3FAE14781C80F34E00122CC3 /* MultipleChoiceQuestion.h */,
+				3FAE14791C80F34E00122CC3 /* MultipleChoiceQuestion.m */,
+				3FAE147B1C80F49900122CC3 /* TrueFalseQuestion.h */,
+				3FAE147C1C80F49900122CC3 /* TrueFalseQuestion.m */,
+				3FAE147E1C80F9DA00122CC3 /* TestQuestionsParser.h */,
+				3FAE147F1C80F9DA00122CC3 /* TestQuestionsParser.m */,
+			);
+			name = TestComponents;
+			sourceTree = "<group>";
+		};
+		3FB4A75A1C865A60004B49BC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3FB4A75D1C865A7A004B49BC /* TableViewController.h */,
+				3FB4A75E1C865A7A004B49BC /* TableViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3FB4A75C1C865A67004B49BC /* Obsolete */ = {
+			isa = PBXGroup;
+			children = (
+				3F215D161C835F8A00389B27 /* SettingsStorage.h */,
+				3F215D171C835F8A00389B27 /* SettingsStorage.m */,
+			);
+			name = Obsolete;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FAE143B1C80F0C300122CC3 /* FaheyTestEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FAE146E1C80F0C400122CC3 /* Build configuration list for PBXNativeTarget "FaheyTestEngine" */;
+			buildPhases = (
+				3FAE14381C80F0C300122CC3 /* Sources */,
+				3FAE14391C80F0C300122CC3 /* Frameworks */,
+				3FAE143A1C80F0C300122CC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaheyTestEngine;
+			productName = FaheyTestEngine;
+			productReference = 3FAE143C1C80F0C300122CC3 /* FaheyTestEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FAE145C1C80F0C300122CC3 /* FaheyTestEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FAE14711C80F0C400122CC3 /* Build configuration list for PBXNativeTarget "FaheyTestEngineTests" */;
+			buildPhases = (
+				3FAE14581C80F0C300122CC3 /* Sources */,
+				3FAE14591C80F0C300122CC3 /* Frameworks */,
+				3FAE145A1C80F0C300122CC3 /* Resources */,
+				3FAE145B1C80F0C300122CC3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FAE14621C80F0C300122CC3 /* PBXTargetDependency */,
+			);
+			name = FaheyTestEngineTests;
+			productName = FaheyTestEngineTests;
+			productReference = 3FAE145D1C80F0C300122CC3 /* FaheyTestEngineTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FAE14331C80F0C300122CC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3FAE14361C80F0C300122CC3 /* Build configuration list for PBXProject "FaheyTestEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FAE14311C80F0C300122CC3;
+			productRefGroup = 3FAE143D1C80F0C300122CC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FAE143B1C80F0C300122CC3 /* FaheyTestEngine */,
+				3FAE145C1C80F0C300122CC3 /* FaheyTestEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FAE143A1C80F0C300122CC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE144B1C80F0C300122CC3 /* InfoPlist.strings in Resources */,
+				3FAE14511C80F0C300122CC3 /* Credits.rtf in Resources */,
+				3FAE14571C80F0C300122CC3 /* MainMenu.xib in Resources */,
+				3F0F3EB01C8F04E700CC1E73 /* TestWindowControllerWindowController.xib in Resources */,
+				3FBB6B891C90540F0077B687 /* MultipleChoiceViewController.xib in Resources */,
+				3FEB4E681C9096610035BE6F /* TrueFalseViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAE145A1C80F0C300122CC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE14681C80F0C400122CC3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FAE145B1C80F0C300122CC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FAE14381C80F0C300122CC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE144D1C80F0C300122CC3 /* main.m in Sources */,
+				3FAE14541C80F0C300122CC3 /* AppDelegate.m in Sources */,
+				3FAE14771C80F0FF00122CC3 /* Question.m in Sources */,
+				3FAE147A1C80F34E00122CC3 /* MultipleChoiceQuestion.m in Sources */,
+				3FAE147D1C80F49900122CC3 /* TrueFalseQuestion.m in Sources */,
+				3FAE14801C80F9DA00122CC3 /* TestQuestionsParser.m in Sources */,
+				3F215D181C835F8A00389B27 /* SettingsStorage.m in Sources */,
+				3FB4A75F1C865A7A004B49BC /* TableViewController.m in Sources */,
+				3F0F3EAF1C8F04E700CC1E73 /* TestWindowControllerWindowController.m in Sources */,
+				3FBB6B881C90540F0077B687 /* MultipleChoiceViewController.m in Sources */,
+				3FEB4E671C9096610035BE6F /* TrueFalseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAE14581C80F0C300122CC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE146B1C80F0C400122CC3 /* FaheyTestEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FAE14621C80F0C300122CC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FAE143B1C80F0C300122CC3 /* FaheyTestEngine */;
+			targetProxy = 3FAE14611C80F0C300122CC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FAE14491C80F0C300122CC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAE144A1C80F0C300122CC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FAE144F1C80F0C300122CC3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAE14501C80F0C300122CC3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3FAE14551C80F0C300122CC3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAE14561C80F0C300122CC3 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3FAE14661C80F0C400122CC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAE14671C80F0C400122CC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FAE146C1C80F0C400122CC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3FAE146D1C80F0C400122CC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3FAE146F1C80F0C400122CC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaheyTestEngine/FaheyTestEngine-Prefix.pch";
+				INFOPLIST_FILE = "FaheyTestEngine/FaheyTestEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FAE14701C80F0C400122CC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaheyTestEngine/FaheyTestEngine-Prefix.pch";
+				INFOPLIST_FILE = "FaheyTestEngine/FaheyTestEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3FAE14721C80F0C400122CC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FaheyTestEngine.app/Contents/MacOS/FaheyTestEngine";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaheyTestEngine/FaheyTestEngine-Prefix.pch";
+				INFOPLIST_FILE = "FaheyTestEngineTests/FaheyTestEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3FAE14731C80F0C400122CC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FaheyTestEngine.app/Contents/MacOS/FaheyTestEngine";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaheyTestEngine/FaheyTestEngine-Prefix.pch";
+				INFOPLIST_FILE = "FaheyTestEngineTests/FaheyTestEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FAE14361C80F0C300122CC3 /* Build configuration list for PBXProject "FaheyTestEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAE146C1C80F0C400122CC3 /* Debug */,
+				3FAE146D1C80F0C400122CC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FAE146E1C80F0C400122CC3 /* Build configuration list for PBXNativeTarget "FaheyTestEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAE146F1C80F0C400122CC3 /* Debug */,
+				3FAE14701C80F0C400122CC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FAE14711C80F0C400122CC3 /* Build configuration list for PBXNativeTarget "FaheyTestEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAE14721C80F0C400122CC3 /* Debug */,
+				3FAE14731C80F0C400122CC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FAE14331C80F0C300122CC3 /* Project object */;
+}
