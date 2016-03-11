@@ -82,6 +82,16 @@
 - (void)windowDidLoad
 {
     [super windowDidLoad];
+    
+    NSSize sizeStruct;
+    sizeStruct.width = 500.0f;
+    sizeStruct.height = 420.0f;
+    [self.window setMinSize:sizeStruct];
+    
+    NSRect frame = self.window.frame;
+    frame.size = sizeStruct;
+    [self.window setFrame:frame display:YES animate:YES];
+    
     [self.window.contentView setAutoresizesSubviews:YES];
 #if DEBUG
     //don't fullscreen during debug mode. why would you do that????
@@ -111,9 +121,13 @@
         {
             //yeet
             multipleChoiceQuestionViewDelegate = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
-            [(NSView*)multipleChoiceQuestionViewDelegate.view setFrame:[self.window.contentView bounds]];
+            
+            NSView* contentView = self.window.contentView;
+            
+            [(NSView*)multipleChoiceQuestionViewDelegate.view setFrame:[contentView bounds]];
             [(NSView*)multipleChoiceQuestionViewDelegate.view setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
-            //[multipleChoiceQuestionViewDelegate.view setAutoresizesSubviews:YES];
+            //[multipleChoiceQuestionViewDelegate.view setTranslatesAutoresizingMaskIntoConstraints:NO];
+            [multipleChoiceQuestionViewDelegate.view setAutoresizesSubviews:YES];
             
             [self.window.contentView addSubview:multipleChoiceQuestionViewDelegate.view];
             NSLog(@"Added subview");
