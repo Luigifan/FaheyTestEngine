@@ -111,7 +111,7 @@
         {
             //yeet
             multipleChoiceQuestionViewDelegate = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
-            [(NSView*)multipleChoiceQuestionViewDelegate.view setBounds:[self.window.contentView bounds]];
+            [(NSView*)multipleChoiceQuestionViewDelegate.view setFrame:[self.window.contentView bounds]];
             [(NSView*)multipleChoiceQuestionViewDelegate.view setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
             //[multipleChoiceQuestionViewDelegate.view setAutoresizesSubviews:YES];
             

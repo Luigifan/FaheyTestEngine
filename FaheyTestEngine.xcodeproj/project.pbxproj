@@ -276,7 +276,7 @@
 			name = FaheyTestEngineTests;
 			productName = FaheyTestEngineTests;
 			productReference = 3FAE145D1C80F0C300122CC3 /* FaheyTestEngineTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -284,7 +284,8 @@
 		3FAE14331C80F0C300122CC3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastTestingUpgradeCheck = 0710;
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 3FAE14361C80F0C300122CC3 /* Build configuration list for PBXProject "FaheyTestEngine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -470,6 +471,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaheyTestEngine/FaheyTestEngine-Prefix.pch";
 				INFOPLIST_FILE = "FaheyTestEngine/FaheyTestEngine-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikesantiago.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -481,6 +483,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaheyTestEngine/FaheyTestEngine-Prefix.pch";
 				INFOPLIST_FILE = "FaheyTestEngine/FaheyTestEngine-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikesantiago.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,6 +497,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaheyTestEngine/FaheyTestEngine-Prefix.pch";
 				INFOPLIST_FILE = "FaheyTestEngineTests/FaheyTestEngineTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikesantiago.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -508,6 +512,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaheyTestEngine/FaheyTestEngine-Prefix.pch";
 				INFOPLIST_FILE = "FaheyTestEngineTests/FaheyTestEngineTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikesantiago.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

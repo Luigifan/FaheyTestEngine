@@ -48,9 +48,9 @@
     
     
     NSMatrix* matrix = [[NSMatrix alloc] initWithFrame:matrixRect mode:NSRadioModeMatrix prototype:(NSCell*)proto numberOfRows:[answers count] numberOfColumns:1];
-    [matrix setHidden:NO];
     [matrix setAutoresizesSubviews:YES];
     [matrix setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+    [matrix setAutosizesCells:YES];
     NSArray* cells = [matrix cells];
     for(int i = 0; i < [cells count]; i++)
     {
