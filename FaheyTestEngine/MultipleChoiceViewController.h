@@ -13,6 +13,7 @@
     MultipleChoiceQuestion* theQuestion;
 }
 
+- (NSArray*) generateRandomQuestionOrder;
 - (id) initWithNibNameAndQuestion:(NSString*)nibName:(MultipleChoiceQuestion*)question;
 - (void) createMatrixGroupOutofQuestionAnswers:(NSArray *)answers;
 @property (weak) IBOutlet NSTextField *questionTextField;

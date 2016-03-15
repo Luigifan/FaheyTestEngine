@@ -10,6 +10,8 @@
 #import "MultipleChoiceQuestion.h"
 #import <QuartzCore/QuartzCore.h>
 
+#include <stdlib.h>
+
 @interface MultipleChoiceViewController ()
 
 @end
@@ -35,6 +37,31 @@
     return self;
 }
 
+- (NSArray*) generateRandomQuestionOrder
+{
+    int numberOfQuestions = [theQuestion potentialAnswers].count; //number of questions that are here
+    
+    NSMutableArray* questionOrder = [[NSMutableArray alloc] initWithCapacity:numberOfQuestions];
+    NSLog(@"Question Index Order: ");
+    for(int i = 0; i < numberOfQuestions; i++)
+    {
+        //arc4random_uniform(1 + count)
+        NSInteger questionIndex = arc4random_uniform(numberOfQuestions + 1);
+        NSLog(@"%ld ", questionIndex);
+        if(![questionOrder containsObject:[NSNumber numberWithInteger:questionIndex]])
+        {
+            [questionOrder insertObject:[NSNumber numberWithInteger:questionIndex] atIndex:0];
+        }
+        else
+        {
+            //todo: go again?????
+            
+        }
+    }
+    NSLog(@"\n");
+    return [NSArray arrayWithArray:questionOrder];
+}
+
 - (void)createMatrixGroupOutofQuestionAnswers:(NSArray *)answers
 {
     NSLog(@"(MultipleChoiceViewController): Need to make %ld buttons.", [answers count]);
@@ -52,10 +79,13 @@
     [matrix setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
     [matrix setAutosizesCells:YES];
     NSArray* cells = [matrix cells];
+    
+    NSArray* questionOrder = [self generateRandomQuestionOrder];
     for(int i = 0; i < [cells count]; i++)
     {
         NSButtonCell* cell = [cells objectAtIndex:i];
-        [cell setTitle:(NSString*)[answers objectAtIndex:i]];
+        //[cell setTitle:(NSString*)[answers objectAtIndex:[questionOrder objectAtIndex:i]]];
+        
     }
     [self.view addSubview:matrix];
     NSLog(@"Added subview");
