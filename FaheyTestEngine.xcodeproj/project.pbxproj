@@ -284,7 +284,7 @@
 		3FAE14331C80F0C300122CC3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastTestingUpgradeCheck = 0710;
+				LastTestingUpgradeCheck = 0720;
 				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 3FAE14361C80F0C300122CC3 /* Build configuration list for PBXProject "FaheyTestEngine" */;

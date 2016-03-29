@@ -21,6 +21,11 @@
 
 - (void) generateTestOrder;
 
+- (void) goToNextQuestion;
+- (void) goToPreviousQuestion;
+- (void) putQuestionInWindow;
+- (void) removeCurrentQuestionView;
+
 //stores the indexes we've done already so we don't accidentally pick them
 @property NSMutableArray* testOrder;
 

@@ -85,6 +85,7 @@
     {
         NSButtonCell* cell = [cells objectAtIndex:i];
         //[cell setTitle:(NSString*)[answers objectAtIndex:[questionOrder objectAtIndex:i]]];
+        [cell setTitle:(NSString*)[answers objectAtIndex:i]];
         
     }
     [self.view addSubview:matrix];

@@ -63,9 +63,67 @@
             break;
         case 2: //next
             NSLog(@"Next question button clicked.");
+            [self goToNextQuestion];
+            [self removeCurrentQuestionView];
+            [self putQuestionInWindow];
             break;
         default:
             break;
+    }
+}
+
+- (void) goToNextQuestion
+{
+    currentQuestionIndex++;
+    if(currentQuestionIndex > [[testQuestionParser getParsedQuestions] count] - 1)
+        currentQuestionIndex = 0;
+    //TODO: completed test
+}
+
+- (void) goToPreviousQuestion
+{
+    currentQuestionIndex--;
+    if(currentQuestionIndex < 0)
+        currentQuestionIndex = 0;
+    //TODO: play error sound and stuff.
+}
+
+/**
+ JK, removes all subviews/
+ */
+- (void) removeCurrentQuestionView
+{
+    for(NSView* view in [self.window.contentView subviews])
+    {
+        [view removeFromSuperview];
+    }
+}
+
+/**
+ Takes from self.currentQuestionIndex
+ */
+- (void) putQuestionInWindow
+{
+    FQuestion* questionToInsert = [[testQuestionParser getParsedQuestions] objectAtIndex:currentQuestionIndex];
+    if(questionToInsert.questionType == FMultipleChoice)
+    {
+        MultipleChoiceQuestion* question = (MultipleChoiceQuestion*)questionToInsert;
+        //yeet
+        multipleChoiceQuestionViewDelegate = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
+        
+        NSView* contentView = self.window.contentView;
+    
+        [(NSView*)multipleChoiceQuestionViewDelegate.view setFrame:[contentView bounds]];
+        [(NSView*)multipleChoiceQuestionViewDelegate.view setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
+        //[multipleChoiceQuestionViewDelegate.view setTranslatesAutoresizingMaskIntoConstraints:NO];
+        [multipleChoiceQuestionViewDelegate.view setAutoresizesSubviews:YES];
+    
+        [self.window.contentView addSubview:multipleChoiceQuestionViewDelegate.view];
+        NSLog(@"Added subview");
+    }
+    else if(questionToInsert.questionType == FTrueFalse)
+    {
+        TrueFalseQuestion* question = (TrueFalseQuestion*)questionToInsert;
     }
 }
 
@@ -114,11 +172,13 @@
             if([_____q questionType] == FMultipleChoice)
             {
                 question = (MultipleChoiceQuestion*)_____q;
+                currentQuestionIndex = i;
             }
         }
         
         if(question)
         {
+            
             //yeet
             multipleChoiceQuestionViewDelegate = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
             
