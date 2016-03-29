@@ -9,6 +9,7 @@
 #import "TestWindowControllerWindowController.h"
 #import "TestQuestionsParser.h"
 #import "MultipleChoiceViewController.h"
+#import "TrueFalseViewController.h"
 #import "Question.h"
 
 #import <stdlib.h>
@@ -75,8 +76,12 @@
 - (void) goToNextQuestion
 {
     currentQuestionIndex++;
+    
     if(currentQuestionIndex > [[testQuestionParser getParsedQuestions] count] - 1)
+    {
         currentQuestionIndex = 0;
+        [self.window setTitle:@"Finished test!"];
+    }
     //TODO: completed test
 }
 
@@ -109,21 +114,31 @@
     {
         MultipleChoiceQuestion* question = (MultipleChoiceQuestion*)questionToInsert;
         //yeet
-        multipleChoiceQuestionViewDelegate = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
+        multipleChoiceQuestionViewController = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
         
         NSView* contentView = self.window.contentView;
     
-        [(NSView*)multipleChoiceQuestionViewDelegate.view setFrame:[contentView bounds]];
-        [(NSView*)multipleChoiceQuestionViewDelegate.view setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
+        [(NSView*)multipleChoiceQuestionViewController.view setFrame:[contentView bounds]];
+        [(NSView*)multipleChoiceQuestionViewController.view setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
         //[multipleChoiceQuestionViewDelegate.view setTranslatesAutoresizingMaskIntoConstraints:NO];
-        [multipleChoiceQuestionViewDelegate.view setAutoresizesSubviews:YES];
+        [multipleChoiceQuestionViewController.view setAutoresizesSubviews:YES];
     
-        [self.window.contentView addSubview:multipleChoiceQuestionViewDelegate.view];
-        NSLog(@"Added subview");
+        [self.window.contentView addSubview:multipleChoiceQuestionViewController.view];
+        NSLog(@"Added multiplechoice subview");
     }
     else if(questionToInsert.questionType == FTrueFalse)
     {
         TrueFalseQuestion* question = (TrueFalseQuestion*)questionToInsert;
+        
+        trueFalseQuestionViewController = [[TrueFalseViewController alloc] initWithNibNameAndQuestion:@"TrueFalseViewController" :question];
+        
+        NSView* contentView = self.window.contentView;
+        [(NSView*)trueFalseQuestionViewController.view setFrame:[contentView bounds]];
+        [(NSView*)trueFalseQuestionViewController.view setAutoresizesSubviews:NSViewHeightSizable | NSViewWidthSizable];
+        [trueFalseQuestionViewController.view setAutoresizesSubviews:YES];
+        
+        [self.window.contentView addSubview:trueFalseQuestionViewController.view];
+        NSLog(@"Added t/f subview");
     }
 }
 
@@ -180,16 +195,16 @@
         {
             
             //yeet
-            multipleChoiceQuestionViewDelegate = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
+            multipleChoiceQuestionViewController = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
             
             NSView* contentView = self.window.contentView;
             
-            [(NSView*)multipleChoiceQuestionViewDelegate.view setFrame:[contentView bounds]];
-            [(NSView*)multipleChoiceQuestionViewDelegate.view setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
+            [(NSView*)multipleChoiceQuestionViewController.view setFrame:[contentView bounds]];
+            [(NSView*)multipleChoiceQuestionViewController.view setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
             //[multipleChoiceQuestionViewDelegate.view setTranslatesAutoresizingMaskIntoConstraints:NO];
-            [multipleChoiceQuestionViewDelegate.view setAutoresizesSubviews:YES];
+            [multipleChoiceQuestionViewController.view setAutoresizesSubviews:YES];
             
-            [self.window.contentView addSubview:multipleChoiceQuestionViewDelegate.view];
+            [self.window.contentView addSubview:multipleChoiceQuestionViewController.view];
             NSLog(@"Added subview");
         }
     }

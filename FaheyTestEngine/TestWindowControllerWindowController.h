@@ -8,14 +8,21 @@
 
 #import <Cocoa/Cocoa.h>
 
-
+/**
+ Forward Declarations
+ */
 @class TestQuestionsParser;
 @class MultipleChoiceViewController; //declare a single, reusable multiple choice question view for use
+@class TrueFalseViewController;
 @class FQuestion;
+//
+
 @interface TestWindowControllerWindowController : NSWindowController <NSWindowDelegate>{
     NSString* testPath;
     TestQuestionsParser* testQuestionParser;
-    MultipleChoiceViewController* multipleChoiceQuestionViewDelegate;
+    MultipleChoiceViewController* multipleChoiceQuestionViewController;
+    TrueFalseViewController* trueFalseQuestionViewController;
+    
     int currentQuestionIndex;
 }
 
