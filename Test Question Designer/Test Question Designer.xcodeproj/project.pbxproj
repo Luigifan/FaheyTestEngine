@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1E4B2D1CA2E80C00B20648 /* FTestQuestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E4B2C1CA2E80C00B20648 /* FTestQuestionTableViewController.m */; };
+		3F76730D1CA174D50015D4B4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F76730C1CA174D50015D4B4 /* Cocoa.framework */; };
+		3F7673171CA174D50015D4B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F7673151CA174D50015D4B4 /* InfoPlist.strings */; };
+		3F7673191CA174D50015D4B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7673181CA174D50015D4B4 /* main.m */; };
+		3F76731D1CA174D50015D4B4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3F76731B1CA174D50015D4B4 /* Credits.rtf */; };
+		3F7673201CA174D50015D4B4 /* FAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76731F1CA174D50015D4B4 /* FAppDelegate.m */; };
+		3F7673231CA174D50015D4B4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7673211CA174D50015D4B4 /* MainMenu.xib */; };
+		3F76732C1CA1759D0015D4B4 /* FTestEditorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76732A1CA1759D0015D4B4 /* FTestEditorWindow.m */; };
+		3F76732D1CA1759D0015D4B4 /* FTestEditorWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F76732B1CA1759D0015D4B4 /* FTestEditorWindow.xib */; };
+		3F7673341CA1793A0015D4B4 /* MultipleChoiceQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76732F1CA1793A0015D4B4 /* MultipleChoiceQuestion.m */; };
+		3F7673351CA1793A0015D4B4 /* TestQuestionsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7673311CA1793A0015D4B4 /* TestQuestionsParser.m */; };
+		3F7673361CA1793A0015D4B4 /* TrueFalseQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7673331CA1793A0015D4B4 /* TrueFalseQuestion.m */; };
+		3F76733A1CA179510015D4B4 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7673391CA179510015D4B4 /* Question.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F1E4B2B1CA2E80C00B20648 /* FTestQuestionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTestQuestionTableViewController.h; sourceTree = "<group>"; };
+		3F1E4B2C1CA2E80C00B20648 /* FTestQuestionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTestQuestionTableViewController.m; sourceTree = "<group>"; };
+		3F7673081CA174D50015D4B4 /* Test Question Designer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Question Designer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F76730C1CA174D50015D4B4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3F76730F1CA174D50015D4B4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3F7673101CA174D50015D4B4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3F7673111CA174D50015D4B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F7673141CA174D50015D4B4 /* Test Question Designer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test Question Designer-Info.plist"; sourceTree = "<group>"; };
+		3F7673161CA174D50015D4B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F7673181CA174D50015D4B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F76731A1CA174D50015D4B4 /* Test Question Designer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test Question Designer-Prefix.pch"; sourceTree = "<group>"; };
+		3F76731C1CA174D50015D4B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3F76731E1CA174D50015D4B4 /* FAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAppDelegate.h; sourceTree = "<group>"; };
+		3F76731F1CA174D50015D4B4 /* FAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAppDelegate.m; sourceTree = "<group>"; };
+		3F7673221CA174D50015D4B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3F7673291CA1759D0015D4B4 /* FTestEditorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTestEditorWindow.h; sourceTree = "<group>"; };
+		3F76732A1CA1759D0015D4B4 /* FTestEditorWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTestEditorWindow.m; sourceTree = "<group>"; };
+		3F76732B1CA1759D0015D4B4 /* FTestEditorWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTestEditorWindow.xib; sourceTree = "<group>"; };
+		3F76732E1CA1793A0015D4B4 /* MultipleChoiceQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceQuestion.h; sourceTree = "<group>"; };
+		3F76732F1CA1793A0015D4B4 /* MultipleChoiceQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceQuestion.m; sourceTree = "<group>"; };
+		3F7673301CA1793A0015D4B4 /* TestQuestionsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuestionsParser.h; sourceTree = "<group>"; };
+		3F7673311CA1793A0015D4B4 /* TestQuestionsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQuestionsParser.m; sourceTree = "<group>"; };
+		3F7673321CA1793A0015D4B4 /* TrueFalseQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseQuestion.h; sourceTree = "<group>"; };
+		3F7673331CA1793A0015D4B4 /* TrueFalseQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFalseQuestion.m; sourceTree = "<group>"; };
+		3F7673381CA179510015D4B4 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		3F7673391CA179510015D4B4 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F7673051CA174D50015D4B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F76730D1CA174D50015D4B4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F7672FD1CA174D40015D4B4 = {
+			isa = PBXGroup;
+			children = (
+				3F7673121CA174D50015D4B4 /* Test Question Designer */,
+				3F76730B1CA174D50015D4B4 /* Frameworks */,
+				3F7673091CA174D50015D4B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F7673091CA174D50015D4B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F7673081CA174D50015D4B4 /* Test Question Designer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F76730B1CA174D50015D4B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F76730C1CA174D50015D4B4 /* Cocoa.framework */,
+				3F76730E1CA174D50015D4B4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F76730E1CA174D50015D4B4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F76730F1CA174D50015D4B4 /* AppKit.framework */,
+				3F7673101CA174D50015D4B4 /* CoreData.framework */,
+				3F7673111CA174D50015D4B4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3F7673121CA174D50015D4B4 /* Test Question Designer */ = {
+			isa = PBXGroup;
+			children = (
+				3F7673371CA1793E0015D4B4 /* External */,
+				3F76731E1CA174D50015D4B4 /* FAppDelegate.h */,
+				3F76731F1CA174D50015D4B4 /* FAppDelegate.m */,
+				3F7673211CA174D50015D4B4 /* MainMenu.xib */,
+				3F7673131CA174D50015D4B4 /* Supporting Files */,
+				3F7673291CA1759D0015D4B4 /* FTestEditorWindow.h */,
+				3F76732A1CA1759D0015D4B4 /* FTestEditorWindow.m */,
+				3F76732B1CA1759D0015D4B4 /* FTestEditorWindow.xib */,
+			);
+			path = "Test Question Designer";
+			sourceTree = "<group>";
+		};
+		3F7673131CA174D50015D4B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F7673141CA174D50015D4B4 /* Test Question Designer-Info.plist */,
+				3F7673151CA174D50015D4B4 /* InfoPlist.strings */,
+				3F7673181CA174D50015D4B4 /* main.m */,
+				3F76731A1CA174D50015D4B4 /* Test Question Designer-Prefix.pch */,
+				3F76731B1CA174D50015D4B4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F7673371CA1793E0015D4B4 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3F7673381CA179510015D4B4 /* Question.h */,
+				3F7673391CA179510015D4B4 /* Question.m */,
+				3F76732E1CA1793A0015D4B4 /* MultipleChoiceQuestion.h */,
+				3F76732F1CA1793A0015D4B4 /* MultipleChoiceQuestion.m */,
+				3F7673301CA1793A0015D4B4 /* TestQuestionsParser.h */,
+				3F7673311CA1793A0015D4B4 /* TestQuestionsParser.m */,
+				3F7673321CA1793A0015D4B4 /* TrueFalseQuestion.h */,
+				3F7673331CA1793A0015D4B4 /* TrueFalseQuestion.m */,
+				3F1E4B2B1CA2E80C00B20648 /* FTestQuestionTableViewController.h */,
+				3F1E4B2C1CA2E80C00B20648 /* FTestQuestionTableViewController.m */,
+			);
+			name = External;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F7673071CA174D50015D4B4 /* Test Question Designer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F7673261CA174D50015D4B4 /* Build configuration list for PBXNativeTarget "Test Question Designer" */;
+			buildPhases = (
+				3F7673041CA174D50015D4B4 /* Sources */,
+				3F7673051CA174D50015D4B4 /* Frameworks */,
+				3F7673061CA174D50015D4B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test Question Designer";
+			productName = "Test Question Designer";
+			productReference = 3F7673081CA174D50015D4B4 /* Test Question Designer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F7672FF1CA174D40015D4B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = F;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3F7673021CA174D40015D4B4 /* Build configuration list for PBXProject "Test Question Designer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F7672FD1CA174D40015D4B4;
+			productRefGroup = 3F7673091CA174D50015D4B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F7673071CA174D50015D4B4 /* Test Question Designer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F7673061CA174D50015D4B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7673171CA174D50015D4B4 /* InfoPlist.strings in Resources */,
+				3F76731D1CA174D50015D4B4 /* Credits.rtf in Resources */,
+				3F7673231CA174D50015D4B4 /* MainMenu.xib in Resources */,
+				3F76732D1CA1759D0015D4B4 /* FTestEditorWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F7673041CA174D50015D4B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7673191CA174D50015D4B4 /* main.m in Sources */,
+				3F7673201CA174D50015D4B4 /* FAppDelegate.m in Sources */,
+				3F76732C1CA1759D0015D4B4 /* FTestEditorWindow.m in Sources */,
+				3F7673341CA1793A0015D4B4 /* MultipleChoiceQuestion.m in Sources */,
+				3F7673351CA1793A0015D4B4 /* TestQuestionsParser.m in Sources */,
+				3F7673361CA1793A0015D4B4 /* TrueFalseQuestion.m in Sources */,
+				3F76733A1CA179510015D4B4 /* Question.m in Sources */,
+				3F1E4B2D1CA2E80C00B20648 /* FTestQuestionTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F7673151CA174D50015D4B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F7673161CA174D50015D4B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F76731B1CA174D50015D4B4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F76731C1CA174D50015D4B4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3F7673211CA174D50015D4B4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F7673221CA174D50015D4B4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F7673241CA174D50015D4B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3F7673251CA174D50015D4B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3F7673271CA174D50015D4B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Test Question Designer/Test Question Designer-Prefix.pch";
+				INFOPLIST_FILE = "Test Question Designer/Test Question Designer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F7673281CA174D50015D4B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Test Question Designer/Test Question Designer-Prefix.pch";
+				INFOPLIST_FILE = "Test Question Designer/Test Question Designer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F7673021CA174D40015D4B4 /* Build configuration list for PBXProject "Test Question Designer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7673241CA174D50015D4B4 /* Debug */,
+				3F7673251CA174D50015D4B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F7673261CA174D50015D4B4 /* Build configuration list for PBXNativeTarget "Test Question Designer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7673271CA174D50015D4B4 /* Debug */,
+				3F7673281CA174D50015D4B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F7672FF1CA174D40015D4B4 /* Project object */;
+}
