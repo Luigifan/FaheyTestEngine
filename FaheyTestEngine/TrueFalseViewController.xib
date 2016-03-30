@@ -30,30 +30,27 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13">
-                    <rect key="frame" x="20" y="125" width="440" height="30"/>
+                <matrix verticalHuggingPriority="750" misplaced="YES" allowsEmptySelection="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                    <rect key="frame" x="20" y="82" width="440" height="90"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="50"/>
                     </constraints>
                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    <size key="cellSize" width="440" height="14"/>
-                    <size key="intercellSpacing" width="4" height="2"/>
-                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" controlSize="mini" inset="2" id="14">
+                    <size key="cellSize" width="440" height="36"/>
+                    <size key="intercellSpacing" width="6" height="0.0"/>
+                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="14">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                        <font key="font" metaFont="miniSystem"/>
+                        <font key="font" metaFont="system"/>
                     </buttonCell>
                     <cells>
                         <column>
-                            <buttonCell type="radio" title="Radio" imagePosition="left" alignment="left" controlSize="mini" state="on" tag="1" sound="Blow" inset="2" id="15">
-                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                <font key="font" metaFont="miniSystem"/>
-                                <connections>
-                                    <binding destination="hMr-cI-ftI" name="value" keyPath="values.trueRadioButton" id="Imc-6R-s2r"/>
-                                </connections>
+                            <buttonCell type="bevel" title="True" imagePosition="left" alignment="left" state="on" tag="1" sound="Blow" inset="2" id="15">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
                             </buttonCell>
-                            <buttonCell type="radio" title="Radio" imagePosition="left" alignment="left" controlSize="mini" inset="2" id="16">
+                            <buttonCell type="radio" title="False" imagePosition="left" alignment="left" inset="2" id="16">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                <font key="font" metaFont="miniSystem"/>
+                                <font key="font" metaFont="system"/>
                             </buttonCell>
                         </column>
                     </cells>

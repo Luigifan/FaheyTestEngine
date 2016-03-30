@@ -12,8 +12,7 @@
 @interface TrueFalseViewController : NSViewController {
     TrueFalseQuestion* theQuestion;
 }
-@property (weak) IBOutlet NSButtonCell *trueRadioButton;
-@property (weak) IBOutlet NSButtonCell *falseRadioButton;
+
 - (id) initWithNibNameAndQuestion:(NSString*)nibName:(TrueFalseQuestion*)question;
 @property (weak) IBOutlet NSTextField *questionLabel;
 @end
