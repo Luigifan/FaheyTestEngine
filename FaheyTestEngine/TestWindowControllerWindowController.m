@@ -142,6 +142,9 @@
     }
 }
 
+/**
+ Unused
+ */
 - (void)generateTestOrder
 {
     NSInteger questionIndex = arc4random_uniform(([[testQuestionParser getParsedQuestions] count] + 1));
@@ -179,34 +182,12 @@
     ReadResult res = [testQuestionParser parseQuestions];
     if(res == ReadingSuccessful)
     {
-        MultipleChoiceQuestion* question;
-        NSArray* questions = [testQuestionParser getParsedQuestions];
-        for(int i = 0; i < [questions count]; i++)
-        {
-            FQuestion* _____q = [questions objectAtIndex:i];
-            if([_____q questionType] == FMultipleChoice)
-            {
-                question = (MultipleChoiceQuestion*)_____q;
-                currentQuestionIndex = i;
-            }
-        }
-        
-        if(question)
-        {
-            
-            //yeet
-            multipleChoiceQuestionViewController = [[MultipleChoiceViewController alloc] initWithNibNameAndQuestion:@"MultipleChoiceViewController" :question];
-            
-            NSView* contentView = self.window.contentView;
-            
-            [(NSView*)multipleChoiceQuestionViewController.view setFrame:[contentView bounds]];
-            [(NSView*)multipleChoiceQuestionViewController.view setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
-            //[multipleChoiceQuestionViewDelegate.view setTranslatesAutoresizingMaskIntoConstraints:NO];
-            [multipleChoiceQuestionViewController.view setAutoresizesSubviews:YES];
-            
-            [self.window.contentView addSubview:multipleChoiceQuestionViewController.view];
-            NSLog(@"Added subview");
-        }
+        currentQuestionIndex = 0;
+        [self putQuestionInWindow];
+    }
+    else
+    {
+        //TODO: error message and exiting window
     }
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.

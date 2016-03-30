@@ -41,5 +41,9 @@
 @property (weak) IBOutlet NSToolbarItem *nextToolbarItem;
 @property (weak) IBOutlet NSToolbarItem *resetToolbarItem;
 @property (weak) IBOutlet NSToolbarItem *previousToolbarItem;
+
+@property (weak) IBOutlet NSNumber* trueRadioButton;
+@property (weak) IBOutlet NSNumber* falseRadioButton;
+
 - (id) initWithWindowNibNameAndTestPath: (NSString*)windowName: (NSString*)path;
 @end
